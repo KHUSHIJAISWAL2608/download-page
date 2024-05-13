@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>download-page</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Mukta', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: inherit !important;
+    }
+
+    .container {
+        padding: 30px;
+        align-items: center;
+    
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+
+    }
+
+    .section1 .main-heading {
+        font-weight: 700;
+        font-size: 55px;
+
+        line-height: 60px;
+    }
+
+    .heading-content {
+        margin-left: 30px;
+    }
+
+    .section1 .sub-heading {
+        color: #00A173;
+        font-weight: 700;
+        font-size: 50px;
+
+        line-height: 60px;
+    }
+
+    .ratings .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .ratings .rating-sub-heading {
+
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 60px;
+        text-align: center;
+        color: #8E8E8E;
+    }
+
+    .ratings .rating {
+
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .border-cont {
+        border-left: 1px solid #6A6A6A;
+        border-right: 1px solid #6A6A6A;
+    }
+
+    .section .download-btn {
+        min-width: 100%;
+        height: 95px;
+        border: none;
+        background-color: #00A173;
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 58px;
+        text-align: center;
+
+    }
+
+    .buttons-cont .btn {
+        border: 1px solid #C0C0C0;
+        padding: 8px 40px;
+        border-radius: 80px;
+        margin-right: 10px;
+    }
+
+    .reviews {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .reviews>div {
+        margin-right: 30px;
+    }
+
+    .review-content {
+        color: 262626;
+
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 40px;
+        margin-right: 20px;
+    }
+
+    .star {
+        color: #00A173;
+
+    }
+
+    .star i {
+        margin-right: 10px;
+    }
+
+    .rating-cont {
+        display: flex;
+        margin-bottom: 5px;
+        margin-left: 50px;
+        align-items: center;
+
+    }
+
+    .rating-cont img {
+        margin-left: 20px;
+        width: initial;
+    }
+
+    .rating-cont h6 {
+        font-size: 30px;
+    }
+
+    .review-container>div:first-child {
+        margin-top: 30px;
+    }
+
+
+
+    .rating-image img {
+        max-width: 100%;
+    }
+
+    .containers {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+    }
+
+    .slide {
+        width: 100%;
+        transition: transform 0.5s ease;
+    }
+ 
+
+
+
+
+
+    @media screen and (min-width:500px ) and  (max-width:768px) {
+        .container {
+            max-width: 100%;
+            padding: 30px !important;
+       
+        }
+.section1{
+    margin-top: 10px !important;
+}
+        .download-log img {
+            width: 100px;
+            height: 100px;
+        }
+        .section .download-btn {
+            min-width: 100%;
+            height: 95px;
+            border: none;
+            background-color: #00A173;
+            color: white;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 58px;
+            text-align: center;
+        }
+        h5{
+            font-size: 15px;
+        }
+        .review-content {
+            color: 262626;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+            margin-right: 20px;
+        }
+        .ratings .rating {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+        }
+        .ratings .rating-sub-heading {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #8E8E8E;
+    line-height: 40px;
+}
+
+
+
+        section.banner {
+            margin: 0px 14px 14px 14px;
+        }
+
+        .slider {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide {
+            flex: 0 0 auto;
+            width: 100%;
+            display: inline-block;
+        }
+        .download-log img {
+            height: 200px;
+            width: 200px;
+        }
+
+
+
+    }
+
+    @media (max-width:425px) {
+        .section1 .main-heading {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .ratings .rating-sub-heading {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #8E8E8E;
+        }
+
+        .heading-content {
+            margin-left: 30px;
+        }
+
+        .section1 .sub-heading {
+            color: #00A173;
+            font-weight: 700;
+            font-size: 50px;
+
+            line-height: 60px;
+        }
+
+        .ratings .rating {
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+        }
+        .download-log img {
+            height: 150px;
+            width: 150px;
+        }
+        .section .download-btn {
+    min-width: 100%;
+    height: 95px;
+    border: none;
+    background-color: #00A173;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    te
+
+    }
+   
+    @media screen and (min-width: 319px) and (max-width: 375px) {
+        .section .download-btn{
+            min-width: 100%;
+       
+        border: none;
+        background-color: #00A173;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+      
+        text-align: center;
+        line-height: 30px;
+        }
+        .star{
+            display: flex !important;
+        }
+        .download-log img {
+            height: 100px;
+            width: 100px;
+        }
+        .review-content {
+    color: 262626;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 0px;
+}
+.reviews h5{
+    font-size: 16px;
+}
+    }
+</style>
+
+<body href="https://storage.googleapis.com/real11prodapk/Real11.apk">
+
+    <a ><div class="container">
+        <section class="section section1" style="margin-top: 10px !important;">
+            <div class="download-log">
+                <a href="https://storage.googleapis.com/real11prodapk/Real11.apk"><img src="https://imagizer.imageshack.com/img923/1976/EZB8Xg.png" alt=""></a>
+            </div>
+            <div class="heading-content">
+                <div class="main-heading">
+
+                    Real11 Opinion <br> & Trading
+
+                </div>
+                <div class="sub-heading">
+                    <h5>Real11 Fantasy Sports LLP</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="ratings section">
+
+            <div class="col">
+                <div class="rating">
+                    4.5
+                </div>
+                <div class="rating-sub-heading">
+                    100+ Reviews
+                </div>
+            </div>
+
+            <div class="col border-cont">
+                <div class="rating ">
+                    9 M+
+                </div>
+                <div class="rating-sub-heading">
+                    Downloads
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="rating">
+                        25lakh +
+                    </div>
+                    <div class="rating-sub-heading">
+                        Winnings
+                    </div>
+                </div>
+        </section>
+
+
+        <div class="section"> <button class="download-btn">
+            <a href="https://storage.googleapis.com/real11prodapk/Real11.apk"> Download & get up to ₹5000*</a>
+            </button></div>
+        <section class="download-banner section  ">
+
+            <div class="containers">
+                <div class="slider" id="slider">
+                    <img src="https://imagizer.imageshack.com/img923/4788/2G6xLi.png" alt="Image 1" class="slide">
+                    <img src="https://imagizer.imageshack.com/img923/9638/ErLMcP.png" alt="Image 2" class="slide">
+                    <img src="https://imagizer.imageshack.com/img922/2316/PGpWT5.png" alt="Image 3" class="slide">
+                    <img src="https://imagizer.imageshack.com/img924/4516/nX0Dsa.png" alt="Image 4" class="slide">
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section style="margin-top: 30px;">
+            <h1>
+                Withdraw Winning From
+            </h1>
+            <h1 style="color: #149DFF;">Allow Outside Google Play Store App Download </h1>
+            <h2>About this app</h2>
+            <p style="color: #5A5A5A;">Share Opinions, Make Predictions on Cricket, Kabaddi & Trending Topics. Trade Now
+            </p>
+
+            <div class="buttons-cont" style="display: flex !important;">
+                <div class="btn">Cricket</div>
+                <div class="btn">Sports</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="rating-image"> <img src="https://imagizer.imageshack.com/img924/4149/6pFGpc.png" alt=""></div>
+
+        </section>
+
+
+        <section class="review-container">
+            <div class="reviews">
+                <div><img src="https://imagizer.imageshack.com/img922/4966/3awIKx.png" alt=""></div>
+                <div>
+                    <h4> Sayantani Mandal</h4>
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div>
+                    <h5> April 30, 2024</h5>
+                </div>
+            </div>
+            <div class="review-content">
+                REAL11 is a sports enthusiasts with its user friendly interface, real time updates and diverse sports
+                options.it is a perfect platform for fantasy sports. The variety of league and real time updates keep me
+                hooked. i can create my own team and compete against friends. the app is very safe to play. the customer
+                service ia always available who can guide and support for your queries. highly recommended to everyone
+                who
+                are sports lover so go for it. i am truly satisfied with this app. thank youˀ
+            </div>
+        </section>
+
+
+        <section class="review-container">
+            <div class="reviews ">
+                <div> <img src="https://imagizer.imageshack.com/img924/2399/s50dL0.png" alt=""></div>
+                <div>
+                    <h4> Tripti Adhikari</h4>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="star"> <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div>
+                    <h5> April 30, 2024</h5>
+                </div>
+            </div>
+
+            <div class="review-content">
+                Very amazing and useful application, it's interface is very user friendly and very helpful for us. This
+                app is a game changer. Smooth gameplay makes every match exciting. A must have for any cricket fan. I am
+                very satisfied and highly recommended to all. This app is mainly for all sports lover. I love this for
+                various type sports engagement.
+            </div>
+        </section>
+
+
+
+
+    </div></a>
+    <script>
+        function showSlides() {
+            // Check if the viewport width is less than 768px
+            if (window.innerWidth < 768) {
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('.slide');
+
+                slideIndex++;
+                if (slideIndex >= slides.length) {
+                    slideIndex = 0;
+                }
+                slides.forEach(slide => {
+                    slide.style.transform = `translateX(-${slideIndex * 100}%)`;
+                });
+            }
+        }
+
+        setInterval(showSlides, 3000);
+
+        setInterval(showSlides, 3000);
+
+    </script>
+
+
+</body>
+
+</html>
